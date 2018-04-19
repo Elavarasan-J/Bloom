@@ -1,0 +1,70 @@
+.navbar-default{
+	&.sticky{
+		border: 0;
+		position: fixed;
+		left: 0;
+		top: 0;
+		z-index: 1000;
+		width: 100%;
+		background-color: transparent;
+		&.nav-bg{
+			background-color: transparent;
+		}
+	}
+	&.custom-navbar{
+		border-bottom: 1px solid #ddd;
+		.custom-nav{
+			>li{
+				>a{
+					color: #333;
+				}
+			}
+		}
+	}
+	.custom-nav{
+		float: none;
+		text-align: center;
+		>li{
+			float: none;
+			display: inline-block;
+			vertical-align: middle;
+			text-transform: uppercase;
+			>a{
+				font-weight: 600;
+				letter-spacing: 0.4px;
+				@include all-transition;
+			}
+		}
+	}
+}
+.logo-black{
+	display: none;
+}
+.scroll-down{
+	color: #fff;
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	z-index: 1000;
+	background: url('../images/down-arrow.svg')no-repeat center center;
+}
+.gift-card{
+	svg{
+		display: inline-block;
+		vertical-align: middle;
+		width: 21px;
+		height: 21px;
+		margin-top: -5px;
+		margin-right: 3px;
+	}
+}
+.gift-card-icon{
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../images/gift-card.png) no-repeat center center;
+	width: 34px;
+	height: 24px;
+	background-size: 25px auto;
+	margin-top: -4px;
+}
+ 
